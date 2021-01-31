@@ -1,0 +1,30 @@
+{
+  "name": "apps-digital-azul-api",
+  "version": "1.0.0",
+  "description": "Boilerplate Express api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "build": "babel ./src --copy-files --out-dir ./dist",
+    "prod": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "Digital Azul",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-plugin-module-resolver": "^4.1.0"
+  }
+}
